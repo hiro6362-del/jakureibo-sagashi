@@ -149,9 +149,9 @@ function diagram(label, value) {
   const v = z2h(value);
   let on = [], left = "", right = "";
   const cars = [...v.matchAll(/(\d+)号車/g)].map(m => +m[1]);
-  const from = v.match(/^(.+?)寄りから(\d+)両目/);
+  const from = v.match(/^(.+?)寄りから([\d・]+)両目/);
   if (cars.length) { on = cars; left = "1号車"; }
-  else if (from) { on = [+from[2]]; left = from[1] + "寄り"; }
+  else if (from) { on = from[2].split("・").map(Number); left = from[1] + "寄り"; }
   else return "";
   if (on.some(x => x > n)) return "";
   let h = `<div class="train" aria-hidden="true"><span class="end">${esc(left)}</span>`;
@@ -160,7 +160,7 @@ function diagram(label, value) {
 }
 
 function valueHtml(v) {
-  return esc(v).replace(/(\d+)(号車|両目)/g, "<b>$1</b>$2");
+  return esc(v).replace(/(\d+(?:・\d+)*)(号車|両目)/g, "<b>$1</b>$2");
 }
 
 function card(code) {

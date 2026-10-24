@@ -557,13 +557,35 @@
   "company": "JR東日本",
   "cars": [
    [
-    "全列車",
+    "10両",
     "9号車"
+   ],
+   [
+    "12両（グリーン車つき）",
+    "11号車"
    ]
   ],
-  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "source": "https://x.com/JRE_MALL/status/1803696199071072695",
   "confidence": "公式以外",
-  "note": "2023年末から4号車→9号車へ移行。グリーン車連結で号車番号が変わった可能性あり、要確認",
+  "note": "グリーン車導入工事で4号車から移動（JR東日本の公式Xより）。グリーン車つき12両の11号車は鉄道ファンサイトの情報",
+  "checked": "2026-10-24"
+ },
+ "11315": {
+  "line": "JR青梅線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10両",
+    "9号車"
+   ],
+   [
+    "12両（グリーン車つき）",
+    "11号車"
+   ]
+  ],
+  "source": "https://x.com/JRE_MALL/status/1803696199071072695",
+  "confidence": "公式以外",
+  "note": "中央線快速と同じ車両の場合",
   "checked": "2026-10-24"
  },
  "11321": {
@@ -1148,12 +1170,668 @@
   "cars": [
    [
     "8両",
-    "2号車・7号車"
+    "2号車"
    ]
   ],
-  "source": "https://rail.hobidas.com/feature/475115/",
+  "source": "https://subway.osakametro.co.jp/news/news/subway/20260421_r6_jyakureisha_henkou.php",
+  "confidence": "公式",
+  "note": "2026年5月上旬に変更（以前は2号車・7号車）",
+  "checked": "2026-10-24"
+ },
+ "27001": {
+  "line": "京急本線",
+  "company": "京急電鉄",
+  "cars": [
+   [
+    "12両",
+    "浦賀・三崎口寄りから3・7・11両目"
+   ],
+   [
+    "8両",
+    "浦賀・三崎口寄りから3・7両目"
+   ],
+   [
+    "6両",
+    "浦賀・三崎口寄りから3両目"
+   ],
+   [
+    "4両",
+    "浦賀・三崎口寄りから3両目"
+   ]
+  ],
+  "source": "https://keikyufaq.fastcloud.jp/fa/keikyucall/web/knowledge571.html",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "27002": {
+  "line": "京急空港線",
+  "company": "京急電鉄",
+  "cars": [
+   [
+    "12両",
+    "浦賀・三崎口寄りから3・7・11両目"
+   ],
+   [
+    "8両",
+    "浦賀・三崎口寄りから3・7両目"
+   ],
+   [
+    "6両",
+    "浦賀・三崎口寄りから3両目"
+   ],
+   [
+    "4両",
+    "浦賀・三崎口寄りから3両目"
+   ]
+  ],
+  "source": "https://keikyufaq.fastcloud.jp/fa/keikyucall/web/knowledge571.html",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "27004": {
+  "line": "京急逗子線",
+  "company": "京急電鉄",
+  "cars": [
+   [
+    "12両",
+    "浦賀・三崎口寄りから3・7・11両目"
+   ],
+   [
+    "8両",
+    "浦賀・三崎口寄りから3・7両目"
+   ],
+   [
+    "6両",
+    "浦賀・三崎口寄りから3両目"
+   ],
+   [
+    "4両",
+    "浦賀・三崎口寄りから3両目"
+   ]
+  ],
+  "source": "https://keikyufaq.fastcloud.jp/fa/keikyucall/web/knowledge571.html",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "27005": {
+  "line": "京急久里浜線",
+  "company": "京急電鉄",
+  "cars": [
+   [
+    "12両",
+    "浦賀・三崎口寄りから3・7・11両目"
+   ],
+   [
+    "8両",
+    "浦賀・三崎口寄りから3・7両目"
+   ],
+   [
+    "6両",
+    "浦賀・三崎口寄りから3両目"
+   ],
+   [
+    "4両",
+    "浦賀・三崎口寄りから3両目"
+   ]
+  ],
+  "source": "https://keikyufaq.fastcloud.jp/fa/keikyucall/web/knowledge571.html",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99302": {
+  "line": "都営浅草線",
+  "company": "東京都交通局",
+  "cars": [
+   [
+    "都営・京成の車両",
+    "3号車"
+   ],
+   [
+    "京急の車両",
+    "3号車・7号車"
+   ]
+  ],
+  "source": "https://railfromokayama2.com/2026/05/06/guide-to-weakly-air-conditioned-women-only-cars-on-toei-subway-lines/",
   "confidence": "公式以外",
-  "note": "2026年4月に設定変更の発表あり。新しい位置は要確認",
+  "note": "西馬込寄りが1号車",
+  "checked": "2026-10-24"
+ },
+ "99303": {
+  "line": "都営三田線",
+  "company": "東京都交通局",
+  "cars": [
+   [
+    "8両（都営・東急の車両）",
+    "6号車"
+   ],
+   [
+    "6両（都営・東急の車両）",
+    "4号車"
+   ],
+   [
+    "相鉄の車両",
+    "7号車"
+   ]
+  ],
+  "source": "https://railfromokayama2.com/2026/05/06/guide-to-weakly-air-conditioned-women-only-cars-on-toei-subway-lines/",
+  "confidence": "公式以外",
+  "note": "目黒寄りから3両目（相鉄車は2両目）",
+  "checked": "2026-10-24"
+ },
+ "99304": {
+  "line": "都営新宿線",
+  "company": "東京都交通局",
+  "cars": [
+   [
+    "10両",
+    "3号車"
+   ]
+  ],
+  "source": "https://railfromokayama2.com/2026/05/06/guide-to-weakly-air-conditioned-women-only-cars-on-toei-subway-lines/",
+  "confidence": "公式以外",
+  "note": "新宿寄りが1号車",
+  "checked": "2026-10-24"
+ },
+ "99301": {
+  "line": "都営大江戸線",
+  "company": "東京都交通局",
+  "cars": [
+   [
+    "8両",
+    "5号車"
+   ]
+  ],
+  "source": "https://railfromokayama2.com/2026/05/06/guide-to-weakly-air-conditioned-women-only-cars-on-toei-subway-lines/",
+  "confidence": "公式以外",
+  "note": "都庁前寄りが1号車",
+  "checked": "2026-10-24"
+ },
+ "31001": {
+  "line": "近鉄難波線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31020": {
+  "line": "近鉄奈良線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31005": {
+  "line": "近鉄大阪線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31025": {
+  "line": "近鉄京都線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31002": {
+  "line": "近鉄橿原線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31011": {
+  "line": "近鉄天理線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31027": {
+  "line": "近鉄名古屋線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31009": {
+  "line": "近鉄山田線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31010": {
+  "line": "近鉄鳥羽線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31015": {
+  "line": "近鉄志摩線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31003": {
+  "line": "近鉄南大阪線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31022": {
+  "line": "近鉄長野線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31007": {
+  "line": "近鉄吉野線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31023": {
+  "line": "近鉄けいはんな線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31021": {
+  "line": "近鉄信貴線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31016": {
+  "line": "近鉄生駒線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31017": {
+  "line": "近鉄田原本線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31008": {
+  "line": "近鉄湯の山線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "31019": {
+  "line": "近鉄鈴鹿線",
+  "company": "近畿日本鉄道",
+  "cars": [
+   [
+    "全列車",
+    "前から2両目と後ろから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "32001": {
+  "line": "南海本線",
+  "company": "南海電鉄",
+  "cars": [
+   [
+    "4両以上",
+    "難波寄りから3両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "32002": {
+  "line": "南海空港線",
+  "company": "南海電鉄",
+  "cars": [
+   [
+    "4両以上",
+    "難波寄りから3両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "32007": {
+  "line": "南海高野線(りんかんサンライン)",
+  "company": "南海電鉄",
+  "cars": [
+   [
+    "4両以上",
+    "難波寄りから3両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "32010": {
+  "line": "南海泉北線",
+  "company": "南海電鉄",
+  "cars": [
+   [
+    "4両以上",
+    "難波寄りから3両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "35001": {
+  "line": "阪神本線",
+  "company": "阪神電鉄",
+  "cars": [
+   [
+    "全列車",
+    "神戸寄りから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "35002": {
+  "line": "阪神なんば線",
+  "company": "阪神電鉄",
+  "cars": [
+   [
+    "全列車",
+    "神戸寄りから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99637": {
+  "line": "山陽電鉄本線",
+  "company": "山陽電気鉄道",
+  "cars": [
+   [
+    "6両",
+    "姫路寄りから2両目"
+   ],
+   [
+    "3・4両",
+    "神戸寄りから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99638": {
+  "line": "山陽電鉄網干線",
+  "company": "山陽電気鉄道",
+  "cars": [
+   [
+    "6両",
+    "姫路寄りから2両目"
+   ],
+   [
+    "3・4両",
+    "神戸寄りから2両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99645": {
+  "line": "神戸市営地下鉄西神線",
+  "company": "神戸市交通局",
+  "cars": [
+   [
+    "6両",
+    "西神中央寄りから4両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99646": {
+  "line": "神戸市営地下鉄山手線",
+  "company": "神戸市交通局",
+  "cars": [
+   [
+    "6両",
+    "西神中央寄りから4両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99636": {
+  "line": "神戸市営地下鉄北神線",
+  "company": "神戸市交通局",
+  "cars": [
+   [
+    "6両",
+    "西神中央寄りから4両目"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99618": {
+  "line": "OsakaMetro御堂筋線",
+  "company": "Osaka Metro",
+  "cars": [
+   [
+    "全列車",
+    "4号車"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99619": {
+  "line": "OsakaMetro谷町線",
+  "company": "Osaka Metro",
+  "cars": [
+   [
+    "全列車",
+    "5号車"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99620": {
+  "line": "OsakaMetro四つ橋線",
+  "company": "Osaka Metro",
+  "cars": [
+   [
+    "全列車",
+    "5号車"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99621": {
+  "line": "OsakaMetro中央線",
+  "company": "Osaka Metro",
+  "cars": [
+   [
+    "全列車",
+    "2号車"
+   ]
+  ],
+  "source": "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/",
+  "confidence": "公式以外",
+  "note": "",
   "checked": "2026-10-24"
  },
  "11415": {
