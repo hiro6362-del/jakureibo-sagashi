@@ -27,6 +27,10 @@ jobs:
             echo "::error::CLOUDFLARE_API_TOKEN と CLOUDFLARE_ACCOUNT_ID をリポジトリのSecretsに登録してください"
             exit 1
           fi
+          if ! echo "$CLOUDFLARE_ACCOUNT_ID" | grep -qE '^[0-9a-f]{32}$'; then
+            echo "::error::CLOUDFLARE_ACCOUNT_ID は英小文字と数字32文字です。余分な文字やスペースが入っていないか確認してください"
+            exit 1
+          fi
 
       - name: 公開するファイルだけを集める
         run: |
