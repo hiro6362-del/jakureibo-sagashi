@@ -1,0 +1,40 @@
+name: Cloudflareに公開
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency: deploy-cloudflare
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      WRANGLER: npx --yes wrangler@4.145.0
+      PROJECT: jakureibo-sagashi
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 鍵が登録されているか確認
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN と CLOUDFLARE_ACCOUNT_ID をリポジトリのSecretsに登録してください"
+            exit 1
+          fi
+
+      - name: 公開するファイルだけを集める
+        run: |
+          mkdir site
+          cp -r index.html manifest.webmanifest sw.js icon.svg icon-*.png data site/
+
+      - name: Cloudflare Pagesに公開
+        run: |
+          $WRANGLER pages project list | grep -q "$PROJECT" || $WRANGLER pages project create "$PROJECT" --production-branch main
+          $WRANGLER pages deploy site --project-name "$PROJECT" --branch main | tee deploy.log
+          echo "### 公開先: https://$PROJECT.pages.dev" >> "$GITHUB_STEP_SUMMARY"
