@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f7fb8">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>弱冷房車さがし</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
+<style>
+:root { padding-block: env(safe-area-inset-top, 0px) env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+[hidden] { display: none !important; }
+/* Layout: one narrow column like a platform guide board; search on top, line cards below, each with a train diagram. */
+:root {
+  --bg: #eef4f7;
+  --panel: #ffffff;
+  --ink: #15242d;
+  --muted: #5b6d78;
+  --line: #d3e0e7;
+  --cool: #1f7fb8;
+  --cool-soft: #d9ecf7;
+  --car: #e3ebf0;
+  --warn: #9a5b00;
+  --warn-soft: #fbefd9;
+  --ok: #1d7a55;
+  --ok-soft: #dcf2e8;
+  --f-display: "Zen Kaku Gothic New", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  --f-body: "BIZ UDPGothic", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f171c; --panel: #172229; --ink: #e4eef3; --muted: #93a6b1; --line: #2a3a44;
+  --cool: #5bb6ea; --cool-soft: #183449; --car: #24333c; --warn: #f0b860; --warn-soft: #3a2c14;
+  --ok: #6fd3a5; --ok-soft: #153328; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f171c; --panel: #172229; --ink: #e4eef3; --muted: #93a6b1; --line: #2a3a44;
+  --cool: #5bb6ea; --cool-soft: #183449; --car: #24333c; --warn: #f0b860; --warn-soft: #3a2c14;
+  --ok: #6fd3a5; --ok-soft: #153328; color-scheme: dark }
+
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 640px; margin: 0 auto; padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 18px; }
+
+header h1 { font-family: var(--f-display); font-weight: 900; font-size: 1.6rem; margin: 0; letter-spacing: .02em; text-wrap: balance; }
+header p { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+
+.search { position: relative; }
+.search label { display: block; font-size: .8rem; color: var(--muted); margin-bottom: 4px; letter-spacing: .05em; }
+#q { width: 100%; box-sizing: border-box; font: inherit; font-size: 1.15rem; padding: 12px 14px; border-radius: 10px;
+  border: 2px solid var(--line); background: var(--panel); color: var(--ink); }
+#q:focus { outline: none; border-color: var(--cool); }
+#sugg { list-style: none; margin: 6px 0 0; padding: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+#sugg button { all: unset; box-sizing: border-box; display: flex; justify-content: space-between; gap: 10px; width: 100%; padding: 11px 14px; cursor: pointer; border-top: 1px solid var(--line); }
+#sugg li:first-child button { border-top: 0; }
+#sugg button:hover, #sugg button:focus-visible { background: var(--cool-soft); }
+#sugg .pref { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.empty { color: var(--muted); padding: 10px 2px; }
+
+.station h2 { font-family: var(--f-display); font-weight: 900; font-size: 2rem; margin: 0; line-height: 1.2; }
+.station .meta { color: var(--muted); font-size: .9rem; }
+
+.cards { display: flex; flex-direction: column; gap: 12px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.card.none { padding-block: 10px; }
+.card-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.card-head h3 { margin: 0; font-size: 1.05rem; }
+.card-head .co { color: var(--muted); font-size: .85rem; }
+.chip { font-size: .72rem; padding: 2px 8px; border-radius: 99px; letter-spacing: .04em; margin-left: auto; white-space: nowrap; }
+.chip.official { background: var(--ok-soft); color: var(--ok); }
+.chip.other { background: var(--warn-soft); color: var(--warn); }
+.chip.nodata { background: var(--car); color: var(--muted); }
+
+.rows { display: flex; flex-direction: column; gap: 10px; }
+.row { display: grid; grid-template-columns: 7.5em 1fr; gap: 4px 12px; align-items: center; }
+.row .k { color: var(--muted); font-size: .9rem; }
+.row .v { font-weight: 700; font-size: 1.05rem; }
+.row .v b { font-family: var(--f-display); font-weight: 900; font-size: 1.5rem; color: var(--cool); font-variant-numeric: tabular-nums; }
+.train { grid-column: 1 / -1; display: flex; gap: 3px; align-items: center; overflow-x: auto; padding-bottom: 2px; }
+.train .end { font-size: .7rem; color: var(--muted); white-space: nowrap; padding: 0 4px; }
+.train .c { flex: 1 0 22px; max-width: 44px; height: 26px; border-radius: 4px; background: var(--car); color: var(--muted);
+  font-size: .7rem; display: grid; place-items: center; font-variant-numeric: tabular-nums; }
+.train .c.on { background: var(--cool); color: var(--panel); font-weight: 700; }
+.note { font-size: .85rem; color: var(--muted); margin: 0; }
+
+footer { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+footer a { color: var(--cool); }
+@media (max-width: 420px) { .row { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>弱冷房車さがし</h1>
+    <p>駅名を入れると、路線ごとに弱冷房車の号車が出ます</p>
+  </header>
+
+  <div class="search">
+    <label for="q">駅名（ひらがなでもOK）</label>
+    <input id="q" type="search" autocomplete="off" placeholder="例：渋谷、しんじゅく、梅田" enterkeyhint="search">
+    <ul id="sugg" hidden></ul>
+  </div>
+
+  <section id="result" aria-live="polite"></section>
+
+  <footer>
+    <div>号車は時期や車両で変わることがあります。乗る前に車体の「弱冷房車」ステッカーも見てください。</div>
+    <div>「公式」は鉄道会社のサイトで確認した情報、「公式以外」は鉄道サイトなどからの情報です（2026年10月24日 時点）。</div>
+    <div>駅・路線データ：<a href="https://github.com/Seo-4d696b75/station_database" target="_blank" rel="noopener">station_database</a>（CC BY-SA 4.0）</div>
+  </footer>
+</div>
+
+<script>
+let DATA = { stations: [], lines: {} }, RULES = {};
+const PREFS = ["","北海道","青森","岩手","宮城","秋田","山形","福島","茨城","栃木","群馬","埼玉","千葉","東京","神奈川","新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知","三重","滋賀","京都","大阪","兵庫","奈良","和歌山","鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知","福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"];
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const kata2hira = s => s.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
+const norm = s => kata2hira(s.trim().replace(/駅$/, ""));
+const z2h = s => s.replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xFEE0));
+
+function search(q) {
+  q = norm(q);
+  if (!q) return [];
+  const hits = [];
+  for (const s of DATA.stations) {
+    const name = s.name, kana = kata2hira(s.kana);
+    let score = -1;
+    if (name === q || kana === q) score = 0;
+    else if (name.startsWith(q) || kana.startsWith(q)) score = 1;
+    else if (name.includes(q)) score = 2;
+    if (score >= 0) hits.push([score, rated(s), s]);
+  }
+  hits.sort((a, b) => a[0] - b[0] || b[1] - a[1] || a[2].name.length - b[2].name.length);
+  return hits.slice(0, 8).map(h => h[2]);
+}
+const rated = s => s.lines.filter(c => RULES[c]).length;
+
+// "10両" + "9号車" or "京都寄りから2両目" → a small train diagram
+function diagram(label, value) {
+  const n = parseInt(z2h(label).match(/(\d+)両/)?.[1] || "0", 10);
+  if (!n || n > 16) return "";
+  const v = z2h(value);
+  let on = [], left = "", right = "";
+  const cars = [...v.matchAll(/(\d+)号車/g)].map(m => +m[1]);
+  const from = v.match(/^(.+?)寄りから(\d+)両目/);
+  if (cars.length) { on = cars; left = "1号車"; }
+  else if (from) { on = [+from[2]]; left = from[1] + "寄り"; }
+  else return "";
+  if (on.some(x => x > n)) return "";
+  let h = `<div class="train" aria-hidden="true"><span class="end">${esc(left)}</span>`;
+  for (let i = 1; i <= n; i++) h += `<span class="c${on.includes(i) ? " on" : ""}">${i}</span>`;
+  return h + "</div>";
+}
+
+function valueHtml(v) {
+  return esc(v).replace(/(\d+)(号車|両目)/g, "<b>$1</b>$2");
+}
+
+function card(code) {
+  const name = DATA.lines[code];
+  const r = RULES[code];
+  if (!r) return `<article class="card none"><div class="card-head"><h3>${esc(name)}</h3><span class="chip nodata">まだ情報なし</span></div></article>`;
+  const chip = r.confidence === "公式" ? `<span class="chip official">公式</span>` : `<span class="chip other">公式以外</span>`;
+  let body = "";
+  if (r.cars.length) {
+    body = `<div class="rows">` + r.cars.map(([k, v]) =>
+      `<div class="row"><span class="k">${esc(k)}</span><span class="v">${valueHtml(v)}</span>${diagram(k, v)}</div>`).join("") + `</div>`;
+  }
+  const note = r.note ? `<p class="note">${esc(r.note)}</p>` : "";
+  return `<article class="card"><div class="card-head"><h3>${esc(name)}</h3><span class="co">${esc(r.company || "")}</span>${chip}</div>${body}${note}</article>`;
+}
+
+function show(s) {
+  const lines = [...s.lines].sort((a, b) => (RULES[b] ? 1 : 0) - (RULES[a] ? 1 : 0));
+  const n = rated(s);
+  $("#result").innerHTML = `<div class="station"><h2>${esc(s.name)}</h2>
+    <div class="meta">${esc(PREFS[s.pref] || "")}・${s.lines.length}路線（うち${n}路線に弱冷房車の情報あり）</div></div>
+    <div class="cards" style="margin-top:12px">${lines.map(card).join("")}</div>`;
+  try { localStorage.setItem("last", s.name + "|" + s.pref); } catch (e) {}
+}
+
+function renderSugg() {
+  const list = search($("#q").value);
+  const ul = $("#sugg");
+  if (!$("#q").value.trim()) { ul.hidden = true; return; }
+  ul.hidden = false;
+  ul.innerHTML = list.length
+    ? list.map((s, i) => `<li><button type="button" data-i="${i}"><span>${esc(s.name)}</span><span class="pref">${esc(PREFS[s.pref])}・${s.lines.length}路線</span></button></li>`).join("")
+    : `<li class="empty" style="padding:11px 14px">見つかりませんでした。別の書き方で試してください。</li>`;
+  ul.querySelectorAll("button").forEach(b => b.onclick = () => { show(list[+b.dataset.i]); $("#q").value = ""; ul.hidden = true; });
+}
+
+$("#q").addEventListener("input", renderSugg);
+$("#q").addEventListener("keydown", e => {
+  if (e.key === "Enter") { const l = search($("#q").value); if (l[0]) { show(l[0]); $("#q").value = ""; $("#sugg").hidden = true; $("#q").blur(); } }
+});
+
+(async function start() {
+  try {
+    const [st, ru] = await Promise.all([fetch("data/stations.json").then(r => r.json()), fetch("data/rules.json").then(r => r.json())]);
+    DATA = st; RULES = ru;
+  } catch (e) {
+    $("#result").innerHTML = `<p class="empty">データを読み込めませんでした。電波のある所で一度開いてください。</p>`;
+    return;
+  }
+  let name = "渋谷", pref = 13;
+  try { const v = localStorage.getItem("last"); if (v) { [name, pref] = v.split("|"); pref = +pref; } } catch (e) {}
+  const s = DATA.stations.find(x => x.name === name && x.pref === pref) || DATA.stations.find(x => x.name === "渋谷");
+  if (s) show(s);
+  if ($("#q").value) renderSugg();
+})();
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+</script>
+</body>
+</html>

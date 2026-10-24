@@ -1,0 +1,2275 @@
+{
+ "26001": {
+  "line": "東急東横線",
+  "company": "東急電鉄",
+  "cars": [
+   [
+    "10両",
+    "9号車"
+   ],
+   [
+    "8両",
+    "7号車"
+   ]
+  ],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "26002": {
+  "line": "東急目黒線",
+  "company": "東急電鉄",
+  "cars": [
+   [
+    "10両",
+    "9号車"
+   ],
+   [
+    "8両",
+    "7号車"
+   ],
+   [
+    "相鉄の車両",
+    "7号車"
+   ]
+  ],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "26009": {
+  "line": "東急新横浜線",
+  "company": "東急電鉄",
+  "cars": [
+   [
+    "東横線直通",
+    "9号車"
+   ],
+   [
+    "目黒線直通の相鉄車両",
+    "7号車"
+   ],
+   [
+    "その他",
+    "4号車"
+   ]
+  ],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "26003": {
+  "line": "東急田園都市線",
+  "company": "東急電鉄",
+  "cars": [
+   [
+    "全列車",
+    "2号車"
+   ],
+   [
+    "東武の車両",
+    "2号車・8号車"
+   ]
+  ],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "26004": {
+  "line": "東急大井町線",
+  "company": "東急電鉄",
+  "cars": [
+   [
+    "全列車",
+    "2号車"
+   ]
+  ],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "26005": {
+  "line": "東急池上線",
+  "company": "東急電鉄",
+  "cars": [
+   [
+    "全列車",
+    "2号車"
+   ]
+  ],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "26006": {
+  "line": "東急多摩川線",
+  "company": "東急電鉄",
+  "cars": [
+   [
+    "全列車",
+    "2号車"
+   ]
+  ],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "26007": {
+  "line": "東急世田谷線",
+  "company": "東急電鉄",
+  "cars": [],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
+ "26008": {
+  "line": "東急こどもの国線",
+  "company": "東急電鉄",
+  "cars": [],
+  "source": "https://www.tokyu.co.jp/railway/soft-cooling/",
+  "confidence": "公式",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
+ "25001": {
+  "line": "小田急小田原線",
+  "company": "小田急電鉄",
+  "cars": [
+   [
+    "10両",
+    "小田原寄りから2両目（2号車）"
+   ],
+   [
+    "8両",
+    "小田原寄りから2両目（2号車）"
+   ],
+   [
+    "6両",
+    "小田原寄りから2両目（2号車）"
+   ]
+  ],
+  "source": "https://www.odakyu.jp/personal/commute/",
+  "confidence": "公式",
+  "note": "通勤車両のみ。特急ロマンスカーは対象外",
+  "checked": "2026-10-24"
+ },
+ "25002": {
+  "line": "小田急江ノ島線",
+  "company": "小田急電鉄",
+  "cars": [
+   [
+    "10両",
+    "小田原寄りから2両目（2号車）"
+   ],
+   [
+    "8両",
+    "小田原寄りから2両目（2号車）"
+   ],
+   [
+    "6両",
+    "小田原寄りから2両目（2号車）"
+   ]
+  ],
+  "source": "https://www.odakyu.jp/personal/commute/",
+  "confidence": "公式",
+  "note": "通勤車両のみ。特急ロマンスカーは対象外",
+  "checked": "2026-10-24"
+ },
+ "25003": {
+  "line": "小田急多摩線",
+  "company": "小田急電鉄",
+  "cars": [
+   [
+    "10両",
+    "小田原寄りから2両目（2号車）"
+   ],
+   [
+    "8両",
+    "小田原寄りから2両目（2号車）"
+   ],
+   [
+    "6両",
+    "小田原寄りから2両目（2号車）"
+   ]
+  ],
+  "source": "https://www.odakyu.jp/personal/commute/",
+  "confidence": "公式",
+  "note": "通勤車両のみ。特急ロマンスカーは対象外",
+  "checked": "2026-10-24"
+ },
+ "33001": {
+  "line": "京阪本線",
+  "company": "京阪電鉄",
+  "cars": [
+   [
+    "8両",
+    "京都寄りから2両目"
+   ],
+   [
+    "7両",
+    "京都寄りから2両目"
+   ],
+   [
+    "4両",
+    "なし"
+   ]
+  ],
+  "source": "https://faq.keihan.co.jp/answer/66b32ef1c6aad7002a3183b4/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "33004": {
+  "line": "京阪鴨東線",
+  "company": "京阪電鉄",
+  "cars": [
+   [
+    "8両",
+    "京都寄りから2両目"
+   ],
+   [
+    "7両",
+    "京都寄りから2両目"
+   ],
+   [
+    "4両",
+    "なし"
+   ]
+  ],
+  "source": "https://faq.keihan.co.jp/answer/66b32ef1c6aad7002a3183b4/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "33008": {
+  "line": "京阪中之島線",
+  "company": "京阪電鉄",
+  "cars": [
+   [
+    "8両",
+    "京都寄りから2両目"
+   ],
+   [
+    "7両",
+    "京都寄りから2両目"
+   ],
+   [
+    "4両",
+    "なし"
+   ]
+  ],
+  "source": "https://faq.keihan.co.jp/answer/66b32ef1c6aad7002a3183b4/",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "33002": {
+  "line": "京阪宇治線",
+  "company": "京阪電鉄",
+  "cars": [],
+  "source": "https://faq.keihan.co.jp/answer/66b32ef1c6aad7002a3183b4/",
+  "confidence": "公式",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
+ "33003": {
+  "line": "京阪交野線",
+  "company": "京阪電鉄",
+  "cars": [],
+  "source": "https://faq.keihan.co.jp/answer/66b32ef1c6aad7002a3183b4/",
+  "confidence": "公式",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
+ "33006": {
+  "line": "京阪石山坂本線",
+  "company": "京阪電鉄",
+  "cars": [],
+  "source": "https://faq.keihan.co.jp/answer/66b32ef1c6aad7002a3183b4/",
+  "confidence": "公式",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
+ "33007": {
+  "line": "京阪京津線",
+  "company": "京阪電鉄",
+  "cars": [],
+  "source": "https://faq.keihan.co.jp/answer/66b32ef1c6aad7002a3183b4/",
+  "confidence": "公式",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
+ "34001": {
+  "line": "阪急神戸本線",
+  "company": "阪急電鉄",
+  "cars": [
+   [
+    "全列車",
+    "大阪梅田寄りから2両目（2号車）"
+   ]
+  ],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "2026年夏に設定変更（以前は両端寄りの2両）",
+  "checked": "2026-10-24"
+ },
+ "34002": {
+  "line": "阪急宝塚本線",
+  "company": "阪急電鉄",
+  "cars": [
+   [
+    "全列車",
+    "大阪梅田寄りから2両目（2号車）"
+   ]
+  ],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "2026年夏に設定変更（以前は両端寄りの2両）",
+  "checked": "2026-10-24"
+ },
+ "34003": {
+  "line": "阪急京都本線",
+  "company": "阪急電鉄",
+  "cars": [
+   [
+    "全列車",
+    "大阪梅田寄りから2両目（2号車）"
+   ]
+  ],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "2026年夏に設定変更（以前は両端寄りの2両）",
+  "checked": "2026-10-24"
+ },
+ "34004": {
+  "line": "阪急今津線",
+  "company": "阪急電鉄",
+  "cars": [],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "車両に貼ってある弱冷車ステッカーで確認してください（公式の案内）",
+  "checked": "2026-10-24"
+ },
+ "34006": {
+  "line": "阪急伊丹線",
+  "company": "阪急電鉄",
+  "cars": [],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "車両に貼ってある弱冷車ステッカーで確認してください（公式の案内）",
+  "checked": "2026-10-24"
+ },
+ "34005": {
+  "line": "阪急甲陽線",
+  "company": "阪急電鉄",
+  "cars": [],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "車両に貼ってある弱冷車ステッカーで確認してください（公式の案内）",
+  "checked": "2026-10-24"
+ },
+ "34007": {
+  "line": "阪急箕面線",
+  "company": "阪急電鉄",
+  "cars": [],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "車両に貼ってある弱冷車ステッカーで確認してください（公式の案内）",
+  "checked": "2026-10-24"
+ },
+ "34009": {
+  "line": "阪急嵐山線",
+  "company": "阪急電鉄",
+  "cars": [],
+  "source": "https://faq.hankyu.co.jp/faq/show/323?site_domain=default",
+  "confidence": "公式",
+  "note": "車両に貼ってある弱冷車ステッカーで確認してください（公式の案内）",
+  "checked": "2026-10-24"
+ },
+ "99316": {
+  "line": "横浜市営地下鉄ブルーライン",
+  "company": "横浜市交通局",
+  "cars": [
+   [
+    "全列車",
+    "5号車"
+   ]
+  ],
+  "source": "https://www.city.yokohama.lg.jp/kotsu/sub/norikata/syanaikucho.html",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99343": {
+  "line": "横浜市営地下鉄グリーンライン",
+  "company": "横浜市交通局",
+  "cars": [
+   [
+    "6両",
+    "5号車"
+   ],
+   [
+    "4両",
+    "3号車"
+   ]
+  ],
+  "source": "https://www.city.yokohama.lg.jp/kotsu/sub/norikata/syanaikucho.html",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "28003": {
+  "line": "東京メトロ日比谷線",
+  "company": "東京メトロ",
+  "cars": [
+   [
+    "全列車",
+    "5号車"
+   ]
+  ],
+  "source": "https://ssl.tokyometro.jp/support/faq_answer?lang=ja&faqno=OpenFAQ-000175",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "28004": {
+  "line": "東京メトロ東西線",
+  "company": "東京メトロ",
+  "cars": [
+   [
+    "全列車",
+    "4号車"
+   ]
+  ],
+  "source": "https://ssl.tokyometro.jp/support/faq_answer?lang=ja&faqno=OpenFAQ-000175",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "28005": {
+  "line": "東京メトロ千代田線",
+  "company": "東京メトロ",
+  "cars": [
+   [
+    "全列車",
+    "4号車"
+   ]
+  ],
+  "source": "https://ssl.tokyometro.jp/support/faq_answer?lang=ja&faqno=OpenFAQ-000175",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "28009": {
+  "line": "東京メトロ南北線",
+  "company": "東京メトロ",
+  "cars": [
+   [
+    "全列車",
+    "4号車"
+   ]
+  ],
+  "source": "https://ssl.tokyometro.jp/support/faq_answer?lang=ja&faqno=OpenFAQ-000175",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "28008": {
+  "line": "東京メトロ半蔵門線",
+  "company": "東京メトロ",
+  "cars": [
+   [
+    "全列車",
+    "2号車"
+   ]
+  ],
+  "source": "https://ssl.tokyometro.jp/support/faq_answer?lang=ja&faqno=OpenFAQ-000175",
+  "confidence": "公式",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11302": {
+  "line": "JR山手線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・11両",
+    "4号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11332": {
+  "line": "JR京浜東北線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・11両",
+    "4号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11307": {
+  "line": "JR根岸線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・11両",
+    "4号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11313": {
+  "line": "JR中央・総武線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・11両",
+    "4号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11312": {
+  "line": "JR中央線(快速)",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "全列車",
+    "9号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "2023年末から4号車→9号車へ移行。グリーン車連結で号車番号が変わった可能性あり、要確認",
+  "checked": "2026-10-24"
+ },
+ "11321": {
+  "line": "JR埼京線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10両",
+    "9号車"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "2019年11月に4号車から変更",
+  "checked": "2026-10-24"
+ },
+ "11322": {
+  "line": "JR川越線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "埼京線直通の10両",
+    "9号車"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11320": {
+  "line": "JR常磐線(上野～取手)",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "快速・中距離電車",
+    "8号車・14号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11306": {
+  "line": "JR横浜線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "8両",
+    "八王子寄りから4両目（5号車）"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11309": {
+  "line": "JR相模線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "4両",
+    "橋本寄りから2両目（3号車）"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "11301": {
+  "line": "JR東海道本線(東京～熱海)",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・15両",
+    "8号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "近郊形電車の場合。4・5号車はグリーン車",
+  "checked": "2026-10-24"
+ },
+ "11308": {
+  "line": "JR横須賀線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・15両",
+    "8号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "近郊形電車の場合。4・5号車はグリーン車",
+  "checked": "2026-10-24"
+ },
+ "11333": {
+  "line": "JR湘南新宿ライン",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・15両",
+    "8号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "近郊形電車の場合。4・5号車はグリーン車",
+  "checked": "2026-10-24"
+ },
+ "11343": {
+  "line": "JR上野東京ライン",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・15両",
+    "8号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "近郊形電車の場合。4・5号車はグリーン車",
+  "checked": "2026-10-24"
+ },
+ "11319": {
+  "line": "JR東北本線(宇都宮線)",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・15両",
+    "8号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "近郊形電車の場合。4・5号車はグリーン車",
+  "checked": "2026-10-24"
+ },
+ "11323": {
+  "line": "JR高崎線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・15両",
+    "8号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "近郊形電車の場合。4・5号車はグリーン車",
+  "checked": "2026-10-24"
+ },
+ "11504": {
+  "line": "JR伊東線",
+  "company": "JR東日本",
+  "cars": [
+   [
+    "10・15両",
+    "8号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "近郊形電車の場合。4・5号車はグリーン車",
+  "checked": "2026-10-24"
+ },
+ "99337": {
+  "line": "東京臨海高速鉄道",
+  "company": "東京臨海高速鉄道",
+  "cars": [
+   [
+    "10両",
+    "9号車"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "21002": {
+  "line": "東武伊勢崎線",
+  "company": "東武鉄道",
+  "cars": [
+   [
+    "全列車",
+    "浅草寄りから3両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "21003": {
+  "line": "東武日光線",
+  "company": "東武鉄道",
+  "cars": [
+   [
+    "全列車",
+    "浅草寄りから3両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "21001": {
+  "line": "東武東上線",
+  "company": "東武鉄道",
+  "cars": [
+   [
+    "全列車",
+    "池袋寄りから2両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "21004": {
+  "line": "東武野田線",
+  "company": "東武鉄道",
+  "cars": [
+   [
+    "全列車",
+    "柏寄りから3両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "24001": {
+  "line": "京王京王線",
+  "company": "京王電鉄",
+  "cars": [
+   [
+    "全列車",
+    "京王八王子・橋本寄りから3両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "24002": {
+  "line": "京王相模原線",
+  "company": "京王電鉄",
+  "cars": [
+   [
+    "全列車",
+    "京王八王子・橋本寄りから3両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "24003": {
+  "line": "京王高尾線",
+  "company": "京王電鉄",
+  "cars": [
+   [
+    "全列車",
+    "京王八王子・橋本寄りから3両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "24006": {
+  "line": "京王井の頭線",
+  "company": "京王電鉄",
+  "cars": [
+   [
+    "全列車",
+    "先頭車から3両目"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22001": {
+  "line": "西武池袋線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "地下鉄直通の10両",
+    "9号車"
+   ],
+   [
+    "6両以上",
+    "2号車（飯能寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22002": {
+  "line": "西武秩父線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "地下鉄直通の10両",
+    "9号車"
+   ],
+   [
+    "6両以上",
+    "2号車（飯能寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22003": {
+  "line": "西武有楽町線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "地下鉄直通の10両",
+    "9号車"
+   ],
+   [
+    "6両以上",
+    "2号車（飯能寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22004": {
+  "line": "西武豊島線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "地下鉄直通の10両",
+    "9号車"
+   ],
+   [
+    "6両以上",
+    "2号車（飯能寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22005": {
+  "line": "西武狭山線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "地下鉄直通の10両",
+    "9号車"
+   ],
+   [
+    "6両以上",
+    "2号車（飯能寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22007": {
+  "line": "西武新宿線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "6両以上",
+    "2号車（西武新宿寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22008": {
+  "line": "西武拝島線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "6両以上",
+    "2号車（西武新宿寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22011": {
+  "line": "西武多摩湖線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "6両以上",
+    "2号車（西武新宿寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22010": {
+  "line": "西武国分寺線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "6両以上",
+    "2号車（西武新宿寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "22009": {
+  "line": "西武西武園線",
+  "company": "西武鉄道",
+  "cars": [
+   [
+    "6両以上",
+    "2号車（西武新宿寄りが1号車）"
+   ],
+   [
+    "4両ワンマン",
+    "3号車"
+   ],
+   [
+    "2両・4両",
+    "なし"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99336": {
+  "line": "東京モノレール",
+  "company": "東京モノレール",
+  "cars": [
+   [
+    "6両",
+    "2号車・4号車・5号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99317": {
+  "line": "金沢シーサイドライン",
+  "company": "株式会社横浜シーサイドライン",
+  "cars": [
+   [
+    "全列車",
+    "2号車"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99309": {
+  "line": "つくばエクスプレス",
+  "company": "首都圏新都市鉄道",
+  "cars": [
+   [
+    "6両",
+    "つくば寄りから3両目（3号車）"
+   ]
+  ],
+  "source": "https://ja.wikipedia.org/wiki/%E5%BC%B1%E5%86%B7%E6%88%BF%E8%BB%8A",
+  "confidence": "公式以外",
+  "note": "",
+  "checked": "2026-10-24"
+ },
+ "99623": {
+  "line": "OsakaMetro堺筋線",
+  "company": "Osaka Metro",
+  "cars": [
+   [
+    "8両",
+    "2号車・7号車"
+   ]
+  ],
+  "source": "https://rail.hobidas.com/feature/475115/",
+  "confidence": "公式以外",
+  "note": "2026年4月に設定変更の発表あり。新しい位置は要確認",
+  "checked": "2026-10-24"
+ },
+ "11415": {
+  "line": "JR北陸本線(米原～敦賀)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11417": {
+  "line": "JR城端線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11418": {
+  "line": "JR氷見線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11419": {
+  "line": "JR七尾線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11421": {
+  "line": "JR越美北線(九頭竜線)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11422": {
+  "line": "JR小浜線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11509": {
+  "line": "JR関西本線(亀山～加茂)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11511": {
+  "line": "JR草津線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11601": {
+  "line": "JR東海道本線(琵琶湖線)(米原～京都)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11602": {
+  "line": "JR東海道本線(京都線)(京都～大阪)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11603": {
+  "line": "JR東海道本線(神戸線)(大阪～神戸)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11605": {
+  "line": "JR湖西線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11607": {
+  "line": "JR関西本線(大和路線)(加茂～ＪＲ難波)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11608": {
+  "line": "JR山陽本線(神戸線)(神戸～姫路)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11609": {
+  "line": "JR山陽本線(姫路～岡山)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11610": {
+  "line": "JR山陽本線(岡山～三原)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11611": {
+  "line": "JR山陽本線(三原～岩国)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11612": {
+  "line": "JR山陽本線(岩国～門司)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11613": {
+  "line": "JR山陽本線(兵庫～和田岬)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11614": {
+  "line": "JR山陰本線(嵯峨野線)(京都～園部)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11615": {
+  "line": "JR山陰本線(園部～豊岡)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11616": {
+  "line": "JR山陰本線(豊岡～米子)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11617": {
+  "line": "JR片町線(学研都市線)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11618": {
+  "line": "JR奈良線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11622": {
+  "line": "JR舞鶴線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11623": {
+  "line": "JR大阪環状線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11624": {
+  "line": "JR桜島線(ゆめ咲線)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11625": {
+  "line": "JR東西線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11626": {
+  "line": "JR阪和線(天王寺～和歌山)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11627": {
+  "line": "JR阪和線(鳳～東羽衣)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11628": {
+  "line": "JR関西空港線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11629": {
+  "line": "JR福知山線(宝塚線)(大阪～篠山口)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11630": {
+  "line": "JR福知山線(篠山口～福知山)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11631": {
+  "line": "JR赤穂線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11632": {
+  "line": "JR加古川線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11633": {
+  "line": "JR姫新線(姫路～佐用)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11634": {
+  "line": "JR姫新線(佐用～新見)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11635": {
+  "line": "JR播但線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11636": {
+  "line": "JR和歌山線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11637": {
+  "line": "JR桜井線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11639": {
+  "line": "JR紀勢本線(きのくに線)(新宮～和歌山)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11640": {
+  "line": "JR紀勢本線(和歌山～和歌山市)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11641": {
+  "line": "JRおおさか東線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11701": {
+  "line": "JR山陰本線(米子～益田)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11702": {
+  "line": "JR山陰本線(益田・仙崎～下関)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11703": {
+  "line": "JR伯備線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11704": {
+  "line": "JR因美線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11705": {
+  "line": "JR境線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11706": {
+  "line": "JR木次線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11708": {
+  "line": "JR山口線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11709": {
+  "line": "JR宇野線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11710": {
+  "line": "JR本四備讃線(瀬戸大橋線)",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11713": {
+  "line": "JR吉備線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11714": {
+  "line": "JR芸備線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11715": {
+  "line": "JR津山線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11716": {
+  "line": "JR呉線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11717": {
+  "line": "JR可部線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11720": {
+  "line": "JR福塩線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11721": {
+  "line": "JR宇部線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11722": {
+  "line": "JR美祢線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11723": {
+  "line": "JR小野田線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ },
+ "11724": {
+  "line": "JR岩徳線",
+  "company": "JR西日本",
+  "cars": [
+   [
+    "前から数えて",
+    "2両目"
+   ],
+   [
+    "後ろから数えて",
+    "2両目"
+   ]
+  ],
+  "source": "https://www.jr-odekake.net/railroad/service/mildly-air-conditioned-car.html",
+  "confidence": "公式",
+  "note": "近畿・広島地区は4両以上、金沢・岡山地区は3両以上の列車。特急と一部の普通列車にはなし。編成の組み合わせで異なる場合あり",
+  "checked": "2026-10-24"
+ }
+}
