@@ -32,6 +32,12 @@ jobs:
           found=$(printf '%s' "$id" | grep -oE '[0-9a-f]{32}' | head -1 || true)
           [ -n "$found" ] && id="$found"
           echo "CLOUDFLARE_ACCOUNT_ID=$id" >> "$GITHUB_ENV"
+          # トークンも同様に、空白や改行、確認用コマンドごと貼られた場合に本体だけを取り出す
+          tok=$(printf '%s' "$CLOUDFLARE_API_TOKEN" | tr -d '[:space:]')
+          case "$tok" in *Bearer*) tok=$(printf '%s' "$tok" | sed -E 's/.*Bearer([A-Za-z0-9_-]+).*/\1/') ;; esac
+          echo "::add-mask::$tok"
+          echo "CLOUDFLARE_API_TOKEN=$tok" >> "$GITHUB_ENV"
+          echo "トークンは${#tok}文字です"
           if ! printf '%s' "$id" | grep -qE '^[0-9a-f]{32}$'; then
             echo "::error::CLOUDFLARE_ACCOUNT_ID は英小文字と数字32文字です（今は${#id}文字）。余分な文字が入っていないか確認してください"
             exit 1
