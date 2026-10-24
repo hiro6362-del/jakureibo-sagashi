@@ -27,8 +27,10 @@ jobs:
             echo "::error::CLOUDFLARE_API_TOKEN と CLOUDFLARE_ACCOUNT_ID をリポジトリのSecretsに登録してください"
             exit 1
           fi
-          # 貼り付け時に混ざった空白や改行を取り除く
+          # 空白や改行、ダッシュボードのアドレスごと貼られた場合も、32文字のIDだけを取り出す
           id=$(printf '%s' "$CLOUDFLARE_ACCOUNT_ID" | tr -d '[:space:]')
+          found=$(printf '%s' "$id" | grep -oE '[0-9a-f]{32}' | head -1 || true)
+          [ -n "$found" ] && id="$found"
           echo "CLOUDFLARE_ACCOUNT_ID=$id" >> "$GITHUB_ENV"
           if ! printf '%s' "$id" | grep -qE '^[0-9a-f]{32}$'; then
             echo "::error::CLOUDFLARE_ACCOUNT_ID は英小文字と数字32文字です（今は${#id}文字）。余分な文字が入っていないか確認してください"
