@@ -496,6 +496,60 @@
   "note": "",
   "checked": "2026-10-24"
  },
+ "28006": {
+  "line": "東京メトロ有楽町線",
+  "company": "東京メトロ",
+  "cars": [
+   [
+    "10両",
+    "9号車"
+   ],
+   [
+    "8両",
+    "7号車"
+   ]
+  ],
+  "source": "https://ssl.tokyometro.jp/support/faq_answer?lang=ja&faqno=OpenFAQ-000175",
+  "confidence": "公式以外",
+  "note": "東京メトロ公式FAQの見出しが途中までしか読めず、直通先の東急東横線・西武線と同じ位置と推測。要確認",
+  "checked": "2026-10-24"
+ },
+ "28010": {
+  "line": "東京メトロ副都心線",
+  "company": "東京メトロ",
+  "cars": [
+   [
+    "10両",
+    "9号車"
+   ],
+   [
+    "8両",
+    "7号車"
+   ]
+  ],
+  "source": "https://ssl.tokyometro.jp/support/faq_answer?lang=ja&faqno=OpenFAQ-000175",
+  "confidence": "公式以外",
+  "note": "東京メトロ公式FAQの見出しが途中までしか読めず、直通先の東急東横線・西武線と同じ位置と推測。要確認",
+  "checked": "2026-10-24"
+ },
+ "28001": {
+  "line": "東京メトロ銀座線",
+  "company": "東京メトロ",
+  "cars": [],
+  "source": "https://tairayukiblog.hatenablog.jp/entry/2023/07/25/070821",
+  "confidence": "公式以外",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
+ "28002": {
+  "line": "東京メトロ丸ノ内線",
+  "company": "東京メトロ",
+  "cars": [],
+  "source": "https://tairayukiblog.hatenablog.jp/entry/2023/07/25/070821",
+  "confidence": "公式以外",
+  "note": "弱冷房車なし",
+  "checked": "2026-10-24"
+ },
  "11302": {
   "line": "JR山手線",
   "company": "JR東日本",
