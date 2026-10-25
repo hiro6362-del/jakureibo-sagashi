@@ -24,6 +24,8 @@ KQ = "https://keikyufaq.fastcloud.jp/fa/keikyucall/web/knowledge571.html"
 TO = "https://railfromokayama2.com/2026/05/06/guide-to-weakly-air-conditioned-women-only-cars-on-toei-subway-lines/"
 KS = "https://mina369.com/%E5%BC%B1%E5%86%B7%E8%BB%8A%E3%81%AE%E8%BB%8A%E4%B8%A1%E3%81%AF%E3%81%A9%E3%81%93%EF%BC%9F%E4%BD%95%E8%BB%8A%E4%B8%A1%E7%9B%AE%EF%BC%9F/"
 JX = "https://x.com/JRE_MALL/status/1803696199071072695"
+AK = "https://ameblo.jp/akupon/entry-12173714357.html"
+KSW = "https://ksweb.org/article/2025/e003045.php"
 
 def R(cars, src, conf, note=""):
     return {"cars": cars, "source": src, "confidence": conf, "note": note}
@@ -72,6 +74,16 @@ rules = {
  "JR埼京線": R([["10両", "9号車"]], HB, "公式以外", "2019年11月に4号車から変更"),
  "JR川越線": R([["埼京線直通の10両", "9号車"]], HB, "公式以外"),
  "JR常磐線(快速)": R([["快速・中距離電車", "8号車・14号車"]], WP, "公式以外"),
+ # 関東の追加分（2026-10-25）
+ "JR南武線": R([["6両", "4号車（川崎寄りが1号車）"]], "https://atompoke.hatenablog.com/entry/2018/07/25/010515", "公式以外", "2018年の情報"),
+ "JR京葉線": R([["10両", "東京寄りから4両目"]], AK, "公式以外", "2016年の情報"),
+ "JR武蔵野線": R([["8両", "東京・南船橋寄りから4両目"]], AK, "公式以外", "2016年の情報。南船橋〜海浜幕張間は向きが逆になります"),
+ **{n: R([["8両", "上野寄りから3両目"], ["6両", "上野寄りから3両目"]], KSW, "公式以外", "6両は2025年5月から設定")
+    for n in ["京成本線", "京成押上線", "京成成田空港線(成田スカイアクセス)", "京成千葉線", "京成千原線"]},
+ "京成松戸線": R([["6両", "松戸寄りから3両目（4号車）"]], KSW, "公式以外"),
+ **{n: R([["10両", "海老名・湘南台寄りから2両目（9号車）"], ["8両", "海老名・湘南台寄りから2両目（7号車）"], ["東急目黒線から来る8両", "4号車"]],
+         "https://ja.wikipedia.org/wiki/%E7%9B%B8%E9%89%84%E6%9C%AC%E7%B7%9A", "公式以外")
+    for n in ["相鉄本線", "相鉄いずみ野線", "相鉄新横浜線"]},
  "JR横浜線": R([["8両", "八王子寄りから4両目（5号車）"]], WP, "公式以外"),
  "JR相模線": R([["4両", "橋本寄りから2両目（3号車）"]], WP, "公式以外"),
  **{n: R([["10・15両", "8号車"]], WP, "公式以外", "近郊形電車の場合。4・5号車はグリーン車")
