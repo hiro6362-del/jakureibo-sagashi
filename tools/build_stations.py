@@ -9,7 +9,8 @@ for r in csv.DictReader(open(f'{DB}/out/main/register.csv')):
     s = st.get(r['station_code'])
     if not s or r['line_code'] not in lines: continue
     key = (s['name'], s['prefecture'])
-    g = groups.setdefault(key, {"name": s['name'], "kana": s['name_kana'], "pref": int(s['prefecture']), "lines": []})
+    g = groups.setdefault(key, {"name": s['name'], "kana": s['name_kana'], "pref": int(s['prefecture']),
+                                "lat": round(float(s['lat']), 4), "lng": round(float(s['lng']), 4), "lines": []})
     if r['line_code'] not in g['lines']: g['lines'].append(r['line_code'])
 for g in groups.values():
     g['lines'] = split_station_lines(g['name'], g['lines'])

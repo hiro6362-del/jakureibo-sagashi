@@ -60,6 +60,13 @@ header p { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
 #sugg button:hover, #sugg button:focus-visible { background: var(--cool-soft); }
 #sugg .pref { color: var(--muted); font-size: .85rem; white-space: nowrap; }
 .empty { color: var(--muted); padding: 10px 2px; }
+.qrow { display: flex; gap: 8px; }
+.qrow #q { flex: 1; min-width: 0; }
+#near { flex: none; display: flex; align-items: center; gap: 4px; font: inherit; font-size: .9rem; font-weight: 700; padding: 0 12px;
+  border-radius: 10px; border: 2px solid var(--cool); background: var(--cool-soft); color: var(--cool); cursor: pointer; }
+#near:focus-visible { outline: 2px solid var(--cool); outline-offset: 2px; }
+#near[aria-busy="true"] { opacity: .6; }
+#sugg .head { padding: 8px 14px; font-size: .8rem; color: var(--muted); }
 
 .station h2 { font-family: var(--f-display); font-weight: 900; font-size: 2rem; margin: 0; line-height: 1.2; }
 .station .meta { color: var(--muted); font-size: .9rem; }
@@ -102,7 +109,13 @@ footer a { color: var(--cool); }
 
   <div class="search">
     <label for="q">駅名（ひらがなでもOK）</label>
-    <input id="q" type="search" autocomplete="off" placeholder="例：渋谷、しんじゅく、梅田" enterkeyhint="search">
+    <div class="qrow">
+      <input id="q" type="search" autocomplete="off" placeholder="例：渋谷、しんじゅく、梅田" enterkeyhint="search">
+      <button id="near" type="button" aria-label="現在地から近くの駅を探す">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        <span>近くの駅</span>
+      </button>
+    </div>
     <ul id="sugg" hidden></ul>
   </div>
 
@@ -190,16 +203,46 @@ function show(s) {
   try { localStorage.setItem("last", s.name + "|" + s.pref); } catch (e) {}
 }
 
-function renderSugg() {
-  const list = search($("#q").value);
+function renderList(list, sub, head, empty) {
   const ul = $("#sugg");
-  if (!$("#q").value.trim()) { ul.hidden = true; return; }
   ul.hidden = false;
-  ul.innerHTML = list.length
-    ? list.map((s, i) => `<li><button type="button" data-i="${i}"><span>${esc(s.name)}</span><span class="pref">${esc(PREFS[s.pref])}・${s.lines.length}路線</span></button></li>`).join("")
-    : `<li class="empty" style="padding:11px 14px">見つかりませんでした。別の書き方で試してください。</li>`;
+  ul.innerHTML = (head ? `<li class="head">${esc(head)}</li>` : "") + (list.length
+    ? list.map((s, i) => `<li><button type="button" data-i="${i}"><span>${esc(s.name)}</span><span class="pref">${esc(sub(s))}</span></button></li>`).join("")
+    : `<li class="empty" style="padding:11px 14px">${esc(empty)}</li>`);
   ul.querySelectorAll("button").forEach(b => b.onclick = () => { show(list[+b.dataset.i]); $("#q").value = ""; ul.hidden = true; });
 }
+
+function renderSugg() {
+  if (!$("#q").value.trim()) { $("#sugg").hidden = true; return; }
+  renderList(search($("#q").value), s => `${PREFS[s.pref]}・${s.lines.length}路線`, "", "見つかりませんでした。別の書き方で試してください。");
+}
+
+// 2点間のおおよその距離（メートル）
+function dist(lat1, lng1, lat2, lng2) {
+  const r = Math.PI / 180, x = (lng2 - lng1) * r * Math.cos((lat1 + lat2) / 2 * r), y = (lat2 - lat1) * r;
+  return Math.sqrt(x * x + y * y) * 6371000;
+}
+const fmtDist = m => m < 1000 ? `${Math.round(m / 10) * 10}m` : `${(m / 1000).toFixed(1)}km`;
+
+function nearby() {
+  const btn = $("#near");
+  if (!navigator.geolocation) { renderList([], null, "", "この端末では現在地を使えません。駅名で探してください。"); return; }
+  btn.setAttribute("aria-busy", "true");
+  navigator.geolocation.getCurrentPosition(pos => {
+    btn.removeAttribute("aria-busy");
+    const { latitude: la, longitude: ln } = pos.coords;
+    const list = DATA.stations.map(s => [dist(la, ln, s.lat, s.lng), s]).sort((a, b) => a[0] - b[0]).slice(0, 6);
+    const d = new Map(list.map(([m, s]) => [s, m]));
+    renderList(list.map(x => x[1]), s => `${fmtDist(d.get(s))}・${s.lines.length}路線`, "現在地から近い駅", "");
+    if (list[0] && list[0][0] < 400) show(list[0][1]);
+  }, err => {
+    btn.removeAttribute("aria-busy");
+    renderList([], null, "", err.code === 1
+      ? "位置情報が許可されていません。スマホの設定でこのアプリの位置情報をオンにしてください。"
+      : "現在地がわかりませんでした。少し待ってもう一度押してください。");
+  }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
+}
+$("#near").addEventListener("click", nearby);
 
 $("#q").addEventListener("input", renderSugg);
 $("#q").addEventListener("keydown", e => {
