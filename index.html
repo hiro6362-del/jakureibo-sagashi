@@ -163,11 +163,15 @@ function valueHtml(v) {
   return esc(v).replace(/(\d+(?:・\d+)*)(号車|両目)/g, "<b>$1</b>$2");
 }
 
-function card(code) {
+function card(code, station) {
   const name = DATA.lines[code];
-  const r = RULES[code];
+  let r = RULES[code];
+  // 快速と各駅停車で止まる駅が違う路線などは、駅ごとの情報を優先する
+  const over = r && r.by_station && r.by_station[station];
+  if (over) r = { ...r, ...over };
   if (!r) return `<article class="card none"><div class="card-head"><h3>${esc(name)}</h3><span class="chip nodata">まだ情報なし</span></div></article>`;
-  const chip = r.confidence === "公式" ? `<span class="chip official">公式</span>` : `<span class="chip other">公式以外</span>`;
+  const chip = r.confidence === "公式" ? `<span class="chip official">公式</span>`
+    : r.confidence === "未確認" ? `<span class="chip nodata">まだ情報なし</span>` : `<span class="chip other">公式以外</span>`;
   let body = "";
   if (r.cars.length) {
     body = `<div class="rows">` + r.cars.map(([k, v]) =>
@@ -182,7 +186,7 @@ function show(s) {
   const n = rated(s);
   $("#result").innerHTML = `<div class="station"><h2>${esc(s.name)}</h2>
     <div class="meta">${esc(PREFS[s.pref] || "")}・${s.lines.length}路線（うち${n}路線に弱冷房車の情報あり）</div></div>
-    <div class="cards" style="margin-top:12px">${lines.map(card).join("")}</div>`;
+    <div class="cards" style="margin-top:12px">${lines.map(c => card(c, s.name)).join("")}</div>`;
   try { localStorage.setItem("last", s.name + "|" + s.pref); } catch (e) {}
 }
 
