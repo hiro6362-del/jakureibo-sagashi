@@ -1,6 +1,6 @@
 // 画面と駅・弱冷房車データを丸ごとキャッシュし、電波がなくても開けるようにする
 // データを更新したら CACHE の番号を上げる
-const CACHE = "jakureibo-v7";
+const CACHE = "jakureibo-v8";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon.svg", "icon-192.png", "data/stations.json", "data/rules.json"];
 self.addEventListener("install", e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())));
 self.addEventListener("activate", e => e.waitUntil(
