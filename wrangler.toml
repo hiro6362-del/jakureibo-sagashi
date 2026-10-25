@@ -1,0 +1,9 @@
+# 弱冷房車さがし（Cloudflare Pages + 情報受付用のD1）
+name = "jakureibo-sagashi"
+pages_build_output_dir = "site"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "jakureibo-feedback"
+database_id = "__DATABASE_ID__"   # デプロイ時にGitHub Actionsが書き換える

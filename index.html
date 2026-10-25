@@ -94,6 +94,18 @@ header p { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
 .train .c.on { background: var(--cool); color: var(--panel); font-weight: 700; }
 .note { font-size: .85rem; color: var(--muted); margin: 0; }
 
+.fb { background: var(--panel); border: 1px dashed var(--line); border-radius: 12px; padding: 12px 16px; }
+.fb summary { cursor: pointer; font-weight: 700; color: var(--cool); }
+.fb form { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+.fb label { font-size: .85rem; color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
+.fb select, .fb textarea { font: inherit; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+.fb textarea { min-height: 6em; resize: vertical; }
+.fb .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.fb button { align-self: flex-start; font: inherit; font-weight: 700; padding: 10px 18px; border-radius: 8px; border: 0; background: var(--cool); color: var(--panel); cursor: pointer; }
+.fb button:disabled { opacity: .6; }
+.fb .msg { font-size: .9rem; margin: 0; }
+.fb .msg.ok { color: var(--ok); }
+.fb .msg.ng { color: var(--warn); }
 footer { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
 footer a { color: var(--cool); }
 @media (max-width: 420px) { .row { grid-template-columns: 1fr; } }
@@ -199,8 +211,42 @@ function show(s) {
   const n = rated(s);
   $("#result").innerHTML = `<div class="station"><h2>${esc(s.name)}</h2>
     <div class="meta">${esc(PREFS[s.pref] || "")}・${s.lines.length}路線（うち${n}路線に弱冷房車の情報あり）</div></div>
-    <div class="cards" style="margin-top:12px">${lines.map(c => card(c, s.name)).join("")}</div>`;
+    <div class="cards" style="margin-top:12px">${lines.map(c => card(c, s.name)).join("")}</div>
+    <details class="fb" style="margin-top:12px">
+      <summary>号車が違う・知っている情報を送る</summary>
+      <form id="fbform">
+        <label>路線
+          <select id="fbline"><option value="">（選ばなくてもOK）</option>${lines.map(c => `<option>${esc(DATA.lines[c])}</option>`).join("")}</select>
+        </label>
+        <label>内容
+          <textarea id="fbmsg" maxlength="1000" placeholder="例：10両編成は9号車にステッカーがありました（10月25日に確認）"></textarea>
+        </label>
+        <label class="hp" aria-hidden="true">ウェブサイト<input id="fbweb" tabindex="-1" autocomplete="off"></label>
+        <button type="submit" id="fbsend">送る</button>
+        <p class="msg" id="fbstatus" aria-live="polite"></p>
+      </form>
+    </details>`;
+  $("#fbform").addEventListener("submit", e => sendFeedback(e, s));
   try { localStorage.setItem("last", s.name + "|" + s.pref); } catch (e) {}
+}
+
+async function sendFeedback(e, s) {
+  e.preventDefault();
+  const st = $("#fbstatus"), btn = $("#fbsend");
+  const message = $("#fbmsg").value.trim();
+  if (message.length < 2) { st.className = "msg ng"; st.textContent = "内容を書いてください"; return; }
+  btn.disabled = true; st.className = "msg"; st.textContent = "送っています…";
+  try {
+    const r = await fetch("/api/feedback", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ station: s.name, line: $("#fbline").value, message, website: $("#fbweb").value }) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.error || "送れませんでした");
+    st.className = "msg ok"; st.textContent = "送りました。ありがとうございます！確認してからアプリに反映します。";
+    $("#fbmsg").value = "";
+  } catch (err) {
+    st.className = "msg ng";
+    st.textContent = navigator.onLine === false ? "電波がないため送れませんでした。電波のある所でもう一度送ってください。" : err.message;
+  } finally { btn.disabled = false; }
 }
 
 function renderList(list, sub, head, empty) {
