@@ -34,8 +34,13 @@ jobs:
 
       - name: 新しく届いた情報をIssueにする
         run: |
-          $WRANGLER d1 execute jakureibo-feedback --remote --json \
-            --command "SELECT id, created, station, line, message FROM feedback WHERE exported = 0 ORDER BY id LIMIT 50" > rows.json
+          # 公開用の設定ファイルはデータベースIDが仮の値なので、ここでは名前で探させる
+          rm -f wrangler.toml
+          if ! $WRANGLER d1 execute jakureibo-feedback --remote --json \
+            --command "SELECT id, created, station, line, message FROM feedback WHERE exported = 0 ORDER BY id LIMIT 50" > rows.json; then
+            cat rows.json
+            exit 1
+          fi
           jq -c '.[0].results[]' rows.json > rows.jsonl || true
           gh label create "情報提供" --color 1f7fb8 --description "アプリから届いた路線情報" 2>/dev/null || true
           ids=""
